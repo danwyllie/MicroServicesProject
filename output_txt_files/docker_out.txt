@@ -1,1 +1,34 @@
-<paste log output from Docker prediction, here>
+## Output from docker
+Successfully built 9bd6c7b9dad3
+Successfully tagged proj04-app:latest
+REPOSITORY   TAG       IMAGE ID       CREATED                  SIZE
+proj04-app   latest    9bd6c7b9dad3   Less than a second ago   1.18GB
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 246-477-842
+[2022-10-17 20:18:33,694] INFO in app: JSON payload: 
+{'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
+[2022-10-17 20:18:33,713] INFO in app: Inference payload DataFrame: 
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2022-10-17 20:18:33,724] INFO in app: Scaling Payload: 
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2022-10-17 20:18:33,728] INFO in app: Prediction value output: 
+[20.35373177134412]
+172.17.0.1 - - [17/Oct/2022 20:18:33] "POST /predict HTTP/1.1" 200 -
+
+## Output from shell script
+(.devops) voclabs:~/environment/MicroServicesProject (main) $ ./make_prediction.sh
+Port: 8000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
