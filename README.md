@@ -1,7 +1,7 @@
 # MicroServicesProject
 Udacity Operationalize a Machine Learning Microservice API
 
-<include a CircleCI status badge, here>
+[![CircleCI](https://circleci.com/gh/danwyllie/MicroServicesProject.svg?style=svg)](https://app.circleci.com/pipelines/github/danwyllie/MicroServicesProject)
 
 Project Summary:
 
