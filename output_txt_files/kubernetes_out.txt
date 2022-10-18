@@ -1,1 +1,21 @@
-<paste log output from Kubernetes-mediated prediction, here>
+## Output from run_kubernetes script
+(.MicroServicesProject) dan@DESKTOP-EODOPAL:~/MSAS/MicroServicesProject$ ./run_kubernetes.sh
+pod/proj04-app created
+NAME         READY   STATUS              RESTARTS   AGE
+proj04-app   0/1     ContainerCreating   0          0s
+Waiting for pod to start..
+Waiting for pod to start..
+NAME         READY   STATUS    RESTARTS   AGE
+proj04-app   1/1     Running   0          4s
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
+
+## Output from make_prediction script
+dan@DESKTOP-EODOPAL:~/MSAS/MicroServicesProject$ ./make_prediction.sh
+Port: 8000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
