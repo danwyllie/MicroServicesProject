@@ -25,8 +25,8 @@ To complete this project we were asked to complete the following
 * Run make_prediction again, capture the output and save to kubernetes_out.txt
 * Stop/delete local kubernetes pods and the cluster
 * Configure circle.ci integration using the provided .circleci/config.yml file
-* Update the README.md file to add CircleCI status badge
 * Create this README.md file to detail the project
+* Update the README.md file to add the CircleCI status badge
 
 This repo was created using the "project-ml-microservices-kubernets" content available on:
 https://github.com/udacity/DevOps_Microservices
